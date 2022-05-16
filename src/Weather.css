@@ -1,3 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #0a0908;
+  --main-text-clr: #ff6000;
+  --secondary-text-clr: #ffb600;
+  --additional-clr: rgba(255, 255, 255, 0.418);
+  --border: 1px solid #000;
+}
+
+body {
+  background: var(--background);
+  font-family: 'Noto Serif', serif;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .Weather {
-    border: 1px solid #000;
+  border: var(--border);
+  border-radius: 10px;
+  margin: 10rem 100px 0;
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(35, 34, 34, 0.736);
+  color: var(--secondary-text-clr);
+  box-shadow: 9px 6px 30px -14px rgb(255 255 255 / 50%);
+}
+
+.WeatherNow h1 {
+  color: #ff6000;
+}
+.WeatherNow ul {
+  list-style: none;
+  margin: 0;
+}
+
+.form input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid var(--additional-clr);
+}
+.btn-danger {
+  background-color: var(--background);
+  border-color: var(--additional-clr);
+  color: var(--secondary-text-clr);
+  box-shadow: 2px 2px 2px rgb(255 255 255 / 10%);
+}
+
+.WeatherDescription img {
+    width: 100px;
+    vertical-align: bottom;
+}
+
+.temperature {
+    font-size: 60px;
+    line-height: 102px;
+
+}
+
+.units {
+    font-size: 15px;
+    position: relative;
+    top: -30px;
+}
+
+p {
+    color: var(--additional-clr);
+}
+
+
+
+.btn-danger:hover {
+  background-color: var(--main-text-clr);
+  border-color: #000;
 }
