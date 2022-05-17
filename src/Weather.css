@@ -51,9 +51,10 @@ body {
   box-shadow: 2px 2px 2px rgb(255 255 255 / 10%);
 }
 
-.WeatherDescription img {
+.WeatherDescription canvas {
     width: 100px;
     vertical-align: bottom;
+    margin-right: 20px;
 }
 
 .temperature {

@@ -6,8 +6,10 @@ import axios from "axios";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  
 
   function handleResponse(response) {
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
@@ -18,8 +20,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
-      iconUrl:
-        "https://react-weather-app-becca.netlify.app/static/media/sunny.b2af961d345c9d32417aab73c9e454a7.svg",
+      icon: response.data.weather[0].icon,
     });
   }
 
@@ -35,6 +36,7 @@ export default function Weather(props) {
     const apiKey = "940eef9ad873fd43d7217c86264acd04";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
+    
   }
 
   if (weatherData.ready) {
