@@ -22,7 +22,7 @@ body {
 .Weather {
   border: var(--border);
   border-radius: 10px;
-  margin: 10rem 100px 0;
+  margin: 8rem 100px 0;
   padding: 50px;
   text-align: center;
   background-color: rgba(35, 34, 34, 0.736);
@@ -51,12 +51,12 @@ body {
   box-shadow: 2px 2px 2px rgb(255 255 255 / 10%);
 }
 
-.WeatherDescription canvas {
-    width: 100px;
-    vertical-align: bottom;
-    margin-right: 20px;
+.Weather canvas {
+  height: 90px;
+  width: 90px;
+  margin-right: 20px;
+  margin-left: 40px;
 }
-
 .temperature {
     font-size: 60px;
     line-height: 102px;
