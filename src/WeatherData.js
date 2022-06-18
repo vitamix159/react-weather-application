@@ -19,8 +19,8 @@ export default function WeatherData(props) {
         <div className="WeatherDescription mt-5">
           <div className="row">
             <div className="col-6">
-              <span className="d-flex align-content-around">
-              <WeatherIcon code={props.data.icon} />
+              <span className="d-flex">
+              <WeatherIcon code={props.data.icon} size="60" />
               <WeatherTemperatureUnits celsius={props.data.temperature} />
               </span>
             </div>
