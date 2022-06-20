@@ -51,12 +51,7 @@ body {
   box-shadow: 2px 2px 2px rgb(255 255 255 / 10%);
 }
 
-.Weather canvas {
-  height: 90px;
-  width: 90px;
-  margin-right: 20px;
-  margin-left: 40px;
-}
+
 .temperature {
     font-size: 60px;
     line-height: 102px;

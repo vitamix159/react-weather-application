@@ -16,11 +16,11 @@ export default function WeatherData(props) {
           </li>
           <li className="text-capitalize">{props.data.description}</li>
         </ul>
-        <div className="WeatherDescription mt-5">
+        <div className="WeatherDescription mt-3">
           <div className="row">
             <div className="col-6">
               <span className="d-flex">
-              <WeatherIcon code={props.data.icon} size="60" />
+              <WeatherIcon code={props.data.icon} size={80} />
               <WeatherTemperatureUnits celsius={props.data.temperature} />
               </span>
             </div>
